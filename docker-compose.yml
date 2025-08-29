@@ -13,7 +13,7 @@ services:
       - ./robotreviewer/data:/var/lib/deploy/robotreviewer/data
     configs:
       - source: rr-config
-        target: /var/lib/deploy/config.json
+        target: /var/lib/deploy/robotreviewer/config.json
     restart: unless-stopped
     command: web
     ports:
